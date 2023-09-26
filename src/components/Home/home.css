@@ -18,7 +18,7 @@
 .secondary-text{
     color: rgb(240, 139, 218);
     position: absolute;
-    top: 80%;
+    top: 57%;
     font-size: 40px;
     font-weight: 100;
     text-shadow: 10px 0 10px rgb(185, 116, 175);  
@@ -35,7 +35,7 @@
     color: rgb(236, 173, 212);
     font-size: 70px;
     position: absolute;
-    top: 110%;
+    top: 60%;
     text-shadow: 10px 0px 10px rgb(230, 57, 163);
 }
 .front-span{
@@ -80,7 +80,7 @@
     padding-top: 12px;
     letter-spacing: 2px;
     position: absolute;
-    top: 65%;
+    top: 52%;
 }
 .container-welcome span{
     font-size: 25px;
