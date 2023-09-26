@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 .nav-links li{  
@@ -70,13 +70,13 @@ li {
   padding: 6px;
   color: white;
   font-weight: 100;
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Consola', sans-serif;
   cursor: pointer;  
 }
 .languageEs{
   padding: 6px;
   color: white;
-  font-family: 'Geologica', sans-serif;
+  font-family: 'Consola', sans-serif;
   font-weight: 100;
   cursor: pointer;
 }

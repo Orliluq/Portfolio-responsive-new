@@ -1,13 +1,14 @@
 .home-section{
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-evenly;
     margin-top: 150px;
     height: 527px;
 }
 .hi{
     position: absolute;
-    top: 25%;
+    top: 20%;
     color: rgb(204, 155, 197);
     letter-spacing: 16px;
     font-size: 30px;
@@ -18,7 +19,7 @@
 .secondary-text{
     color: rgb(240, 139, 218);
     position: absolute;
-    top: 70%;
+    top: 63%;
     font-size: 40px;
     font-weight: 100;
     text-shadow: 10px 0 10px rgb(185, 116, 175);  
@@ -35,7 +36,7 @@
     color: rgb(236, 173, 212);
     font-size: 70px;
     position: absolute;
-    top: 90%;
+    top: 65%;
     text-shadow: 10px 0px 10px rgb(230, 57, 163);
 }
 .front-span{
@@ -77,10 +78,10 @@
     border-radius: 12px;
     width: 500px;
     height: 60px;   
-    padding-top: 12px;
+    padding-top: 10px;
     letter-spacing: 2px;
     position: absolute;
-    top: 65%;
+    top: 55%;
 }
 .container-welcome span{
     font-size: 25px;
