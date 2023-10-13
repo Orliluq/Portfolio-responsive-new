@@ -28,10 +28,50 @@ const Projects = () => {
         </h2>
 
         <div className="project-container">
+        <div
+            className="project-card"
+            style={{ "--clr": "#e3667d" }}
+            data-aos="zoom-out"
+          >
+            <div className="project-imgBx">
+              <img
+                className="project-img"
+                src="../../images/e-commerce.png"
+                alt="e-commerce eXpress project"
+              />
+            </div>
+            <div className="project-content">
+              <h2>E-COMMERCE eXpress</h2>
+              <p>{isEnglish ? "This is an eCommerce project, which is built using React with redux to store data." : "Este es un proyecto de comercio electrónico, que se construye utilizando React con redux para almacenar datos."}
+              </p>
+              <a href="https://ecommerce-express-mu.vercel.app/"target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+            </div>
+          </div>
+
+          <div
+            className="project-card"
+            style={{ "--clr": "	#e3cc66" }}
+            data-aos="zoom-out"
+          >
+            <div className="project-imgBx">
+              <img
+                className="project-img"
+                src="../../images/techi.png"
+                alt="e-commerce techi project"
+              />
+            </div>
+            <div className="project-content">
+              <h2>E-COMMERCE TECHI</h2>
+              <p>{isEnglish ? "Techi is an online e-commerce store built with a focus on providing a seamless shopping experience to its customers. The project has been developed using the latest front-end technologies, including React, Redux, Redux Thunk, and Redux Toolkit. Data fetching has been achieved using Axios, which ensures a fast and reliable source of data." : "Techi es una tienda de comercio electrónico en línea creada con el objetivo de brindar una experiencia de compra perfecta a sus clientes. El proyecto se ha desarrollado utilizando las últimas tecnologías front-end, incluidas React, Redux, Redux Thunk y Redux Toolkit. La obtención de datos se ha logrado utilizando Axios, lo que garantiza una fuente de datos rápida y confiable."}
+              </p>
+              <a href="https://ecommerce-techi.vercel.app/"target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+            </div>
+          </div>
+
           <div
             className="project-card"
             style={{ "--clr": "#66e3ff" }}
-            data-aos="zoom-out-right"
+            data-aos="zoom-out"
           >
             <div className="project-imgBx">
               <img
@@ -104,7 +144,7 @@ const Projects = () => {
             <h2>PORTFOLIO RESPONSIVE</h2>
               <p>{isEnglish ? "Web portfolio made with HTML, CSS, JavaScript, Glassmorphing technique and subtle styling." : "Portfolio web hecho con HTML, CSS, JavaScript, técnica Glassmorphing y estilismos sutiles."}
               </p>
-              <a href="https://orliluq.github.io/Proyect-portfolio-glass/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+              <a href="https://project-portfolio-glass.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
             </div>
           </div>
 
@@ -144,7 +184,7 @@ const Projects = () => {
             <h2>CALCULADORA BÁSICA CON REACT</h2>
               <p>{isEnglish ? "Basic Calculator using React. Personal project to implement technologies learned during my training time." : "Calculadora Básica utilizando React. Proyecto personal para implementar las tecnologías aprendidas durante mi tiempo de formación."}
               </p>
-              <a href="https://orliluq.github.io/Calculadora-Basica-React/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+              <a href="https://calculadora-basica-react.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
             </div>
           </div>
         </div>

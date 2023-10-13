@@ -7,9 +7,9 @@ const AboutMe = () => {
   const { isEnglish, toggleLanguage } = useContext(LanguageContext);
   const getCVFile = () => {
     if (isEnglish) {
-      return "../../images/CV.PDF";
+      return "../../images/CV.es.pdf";
     } else {
-      return "../../images/CV-En.PDF";
+      return "../../images/CV.en.pdf";
     }
   };
   return (
@@ -24,7 +24,7 @@ const AboutMe = () => {
      data-aos-offset="0">
           <img
             className="img-pic"
-            src="../../images/img.jpg"
+            src="../../images/imagen.jpg"
             alt="picture"
           />
           <a  data-aos="flip-left"

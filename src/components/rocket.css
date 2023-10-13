@@ -3,6 +3,7 @@
     bottom: 10%;
     right: 2%;
     z-index: 9999;
+    max-width: 100%;
 }
 .rocket-box{
     height: 600px;
@@ -17,7 +18,6 @@
   }
   .rockett img{
     transform: scale(0.8, -0.);
-
   }
   .rockett::before{
     content: '';
@@ -76,5 +76,32 @@
     .rockett::before{
       width: 13px;
       left: 21px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .toTop {
+      bottom: 5%;
+      right: 1%;
+    }
+    .rocket-container {
+      bottom: 0;
+      right: 0;
+      transform: translateX(-100%);
+    }
+    .rockett img {
+      width: 30px;
+    }
+    .rockett::after,
+    .rockett::before {
+      width: 10px;
+      left: 15px;
     }
   }

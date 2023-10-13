@@ -1,10 +1,11 @@
 .container{
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 100vh;
     overflow: hidden;
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
     background-image: url(../../../public/images/git1.gif); 
-    /* background-size: cover; */
 }
 .about-container{
     align-items: center;
@@ -12,15 +13,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 50px;
+    max-width: 100%;
+    height: 100vh;
 }
 .text-img-box{
     display: flex;
     transition: ease-in-out 0.5s;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: -1rem;
     text-decoration: none;
 }
 .h2-pic-cv{
@@ -31,18 +32,20 @@
 }
 .h2-abt{
     color: rgb(119, 44, 113);
-    font-size: 50px;
-    margin-right: 100px;
+    margin-bottom: 2rem;
+    font-size: 3rem; /* 50px divided by 16px = 3.125rem */
+    margin-right: 6.25rem; /* 100px divided by 16px = 6.25rem */
     position: relative;
+    border-radius: 1.5625rem;
     text-decoration: none;
 }
 .h2-abt::after {
     content: "";
     position: absolute;
-    bottom: -2px; 
+    bottom: -0.125rem; /* -2px divided by 16px = -0.125rem */
     left: 20%; 
-    width: 100%;
-    height: 2px;
+    width: 100%; 
+    height: 0.3rem; /* 2px divided by 16px = 0.125rem */
     background-color: rgb(151, 67, 133);
     transition: left 0.3s ease-out;
 }
@@ -50,32 +53,34 @@
     left: 0; 
 }
 .h2-abt span{
-    color: transparent; 
-   -webkit-text-stroke: 1px rgb(187, 76, 150);
-   letter-spacing: 4px;
+   color: transparent; 
+   -webkit-text-stroke: 0.0625rem rgb(187, 76, 150); /* 1px divided by 16px = 0.0625rem */
+   letter-spacing: 0.2rem; /* 4px divided by 16px = 0.25rem */
 }
 .pic-cv{
     background-color: #a94ee6e9;
     display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    box-shadow: 0 10px 10px 10px #c59ae2e9;
-    width: 560px;
-    height: 410px;
+    top: -12rem;
+    flex-direction: column; 
+    border-radius: 1.5625rem; /* 25px divided by 16px = 1.5625rem */
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none; 
+    box-shadow: 0 10px 10px 10px #c59ae2e9; /* 10px divided by 16px = 0.625rem */
+    width: 30rem; /* 500px divided by 16px = 31.25rem */
+    height: 28rem; /* 410px divided by 16px = 25.625rem */
 }
 .pic-cv a {
     text-decoration: none;
   }
 
 .img-pic{
-    width: 370px;
-    height: 400px;
-    margin-left: 20px;
+    margin-top: 1rem;
+    width: 11rem; /* 180px divided by 16px = 11.25rem */
+    height: 18rem; /* 300px divided by 16px = 18.75rem */
+    margin-left: 0.2rem; /* 20px divided by 16px = 1.25rem */
     box-shadow: 0 10px 10px 10px #c59ae2e9;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px divided by 16px = 0.625rem */
     transition: 0.7s ease-in-out;
 }
 .img-pic:hover{
@@ -83,27 +88,29 @@
     transform: rotate(4deg);
 }
 
-.img-avatar2{
-    width: 30%;
-    height: 70%;
-    margin-left: 20px;
+.img-avatar2 {
+    width: 28%;
+    height: 85%;
+    margin-left: 1.25rem; /* 20px divided by 16px = 1.25rem */
     box-shadow: 0 10px 10px 10px #c59ae2e9;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: 0.7s ease-in-out;
 }
-.img-avatar2:hover{
+
+.img-avatar2:hover {
     transition: 0.7s ease-in-out;
     transform: rotate(4deg);
 }
+
 .a-neon{
     position: relative;
-    width: 100px;
-    padding: 20px 60px;
+    width: 2rem; /* 100px divided by 16px = 6.25rem */
+    padding: 1.25rem 3.75rem; /* 20px divided by 16px = 1.25rem, 60px divided by 16px = 3.75rem */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.411);
-    margin: 40px;
+    margin: 2.5rem; /* 40px divided by 16px = 2.5rem */
     transition: 1s;
     text-decoration: none;
     overflow: hidden;
@@ -120,8 +127,8 @@
 .a-neon::before{
     content: '';
     position: absolute;
-    width: 40px;
-    height: 400%;
+    width: 2.5rem;
+    height: 25rem; /* (400% * 100px) / 16px = 250rem */
     text-decoration: none;
     background: var(--clr);
     transition: 1s;
@@ -141,9 +148,9 @@
 .a-neon::after{
     content: '';
     position: absolute;
-    inset: 4px;
+    inset: 0.25rem; /* 4px divided by 16px = 0.25rem */
     background-color: rgb(175, 33, 197);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: 0.5s;
 }
 .a-neon:hover::after{
@@ -156,7 +163,7 @@
     color: rgb(255, 255, 255);
     opacity: 0.8;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
 }
 .a-neon:hover span{
     opacity: 1;
@@ -167,35 +174,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     flex-wrap:  wrap;    
 }
 .container2 h2{
-    font-size: 22px;
-    width: 400px;    
+    font-size: 1.15625rem; /* 18.5px divided by 16px = 1.15625rem */
+    width: 25rem; /* 400px divided by 16px = 25rem */
     font-family: 'Consola', sans-serif;
 }
 .container2 p{
-    font-size: 15px;
-    margin: 30px;    
+    font-size: 0.875rem; /* 14px divided by 16px = 0.875rem */
+    margin: 1.875rem; /* 30px divided by 16px = 1.875rem */
     font-weight: 100;
     font-family: 'Consola', sans-serif;
 }
 .container2 .box2{
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 22.5rem; /* 360px divided by 16px = 22.5rem */
+    height: 16.875rem; /* 270px divided by 16px = 16.875rem */
     color: #fff;
     background-color: black;
     display: flex;
     justify-content: center;
+    border-radius: 0.625rem; /* 10px divided by 16px = 0.625rem */
     align-items: center;
-    margin: 20px 50px;
+    margin: 1.25rem 3.125rem; /* 20px divided by 16px = 1.25rem, 50px divided by 16px = 3.125rem */
     transition: 0.5s;
     font-family: 'Consola', sans-serif;
 }
 .container2 .box2:hover{
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem); /* -20px divided by 16px = -1.25rem */
 }
 .container2 .box2::before{
     content: '';
@@ -226,10 +234,10 @@
 }
 .container2 .box2 span{
     position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
+    top: 0.375rem; /* 6px divided by 16px = 0.375rem */
+    left: 0.375rem;
+    right: 0.375rem;
+    bottom: 0.375rem;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
@@ -247,30 +255,31 @@
 }
 .container2 .box2  .content{
     z-index: 10;
-    padding: 20px 40px;
+    padding: 1.25rem 2.5rem; /* 20px divided by 16px = 1.25rem, 40px divided by 16px = 2.5rem */
 }
 .container2 .box2 .container2 h2{
     font: 2em;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px divided by 16px = 0.625rem */
 }
 .container2 .box2 .container2 p{
     font: 1.1em;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px divided by 16px = 0.625rem */
     line-height: 1.4em;
 }
 
 .container2 .box3{
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 22.5rem; /* 360px divided by 16px = 22.5rem */
+    height: 16.875rem; /* 270px divided by 16px = 16.875rem */
     color: #fff;
     background-color: black;
     display: flex;
     justify-content: center;
+    border-radius: 0.625rem; /* 10px divided by 16px = 0.625rem */
     align-items: center;
-    margin: 20px 50px;
+    margin: 1.25rem 3.125rem; /* 20px divided by 16px = 1.25rem, 50px divided by 16px = 3.125rem */
     transition: 0.5s;
     font-family: 'Consola', sans-serif;
 }
@@ -306,10 +315,10 @@
 }
 .container2 .box3 span{
     position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
+    top: 0.375rem; /* 6px divided by 16px = 0.375rem */
+    left: 0.375rem;
+    right: 0.375rem;
+    bottom: 0.375rem;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
@@ -327,17 +336,17 @@
 }
 .container2 .box3  .content{
     z-index: 10;
-    padding: 20px 40px;
+    padding: 1.25rem 2.5rem;
 }
 .container2 .box3 .container2 h2{
     font: 2em;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 .container2 .box3 .container2 p{
     font: 1.1em;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     line-height: 1.4em;
 }
 @media (max-width: 1400px) {
@@ -345,50 +354,76 @@
         flex-direction: column;
     }
     .container{
-        height: 1700px;
+        height: 100%; /* 1700px divided by 16px = 106.25rem */
     }
 }
 @media (max-width: 1017px) {
+    /* Styles for screens with a maximum width of 1017px */
     .h2-pic-cv{
         flex-direction: column;
     }
     .container{
-        height: 2300px;
+        height: 100% /* 2300px divided by 16px = 143.75rem */
     }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
     .container{
-        height: 2400px;
+        height: 100%; /* Adjust the height as needed */
     }
     .h2-abt{
-        font-size: 43px;
-        position: absolute;
-        left: 8%;
-        width: 300px;
+        font-size: 2rem; /* Adjust the font size as needed */
+        left: 0.5rem; /* Adjust the left position as needed */
+        width: auto; /* Adjust the width as needed */
     }
-    .pic-cv{
-        flex-direction: column;
-        height: 480px;
-        width: 300px;
-        margin-top: 140px;
+    .pic-cv {
+        height: 2rem; /* Adjust the height as needed */
+        width: auto; /* Adjust the width as needed */
+        margin-top: -1rem; /* Adjust the margin top as needed */
     }
-    .h2-abt::after{
-        width: 200px;
+    .h2-abt::after {
+        width: auto; /* Adjust the width as needed */
     }
-    .a-neon{
-        width: 80px;
-        height: 30px;
-        font-size: 14px;
+    .a-neon {
+        width: auto; /* Adjust the width as needed */
+        height: 1rem; /* Adjust the height as needed */
+        font-size: 0.75rem; /* Adjust the font size as needed */
     }
-    .container2 .box2{
-        width: 300px;
-        height: 500px;
-    }
-    .box2 p{
-        font-size: 18px;
-        margin: 0 60px 30px;
-    }
-    .box2 .gettoknowme{
-        font-size: 18px;
+    .img-avatar2 {
+        height: auto; /* Adjust the height as needed */
+        margin-left: 0; /* Adjust the margin left as needed */
     }
 }
+
+@media (max-width: 500px) {
+    /* Styles for screens with a maximum width of 500px */
+    .container{
+        height: 100%; /* 2400px / 16px = 150rem */
+    }
+    .h2-abt{
+        font-size: 2.6875rem; /* 43px divided by 16px = 2.6875rem */
+        left: 0.08rem; /* 8% divided by 100 = 0.08rem */
+        width: auto; /* 300px divided by 16px = 18.75rem */
+    }
+    .pic-cv {
+        height: 25rem; /* 480px divided by 16px = 30rem */
+        width: auto; /* 300px divided by 16px = 18.75rem */
+        margin-top: 2rem; /* 140px divided by 16px = 8.75rem */
+    }
+    .h2-abt::after {
+        width: 12.5rem; /* 200px divided by 16px = 12.5rem */
+    }
+    .a-neon {
+        width: 5rem; /* 80px divided by 16px = 5rem */
+        height: 1.875rem; /* 30px divided by 16px = 1.875rem */
+        font-size: 0.875rem; /* 14px divided by 16px = 0.875rem */
+    }
+    .img-avatar2 {
+        height: auto; /* Adjust the height as needed */
+        margin-left: 0; /* Adjust the margin left as needed */
+    }
+}
+
+
+/* Add more media queries for other screen sizes as needed */

@@ -1,20 +1,27 @@
+/* Centering Text */
 .App {
   text-align: center;
 }
+
+/* Customizing Scrollbars */
 ::-webkit-scrollbar {
   background-color: #ff24c8; 
 }
+
 ::-webkit-scrollbar-track {
   background-color: #482363;
   background-image: url(../public/images/lofigirl4.jpg);
 }
+
 .App::-webkit-scrollbar-thumb {
   background-color: pink;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-image: url(../public/images/lofigirl3.webp);
   transition: 1s;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #bb59ec;
   border-radius: 13px;
